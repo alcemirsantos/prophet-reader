@@ -1,33 +1,11 @@
-import xml.etree.ElementTree as ET
-import unicodecsv as csv
-import codecs
-from experiment import Experiment
-from category import Category
+from src.readers.reader import Reader
+from src.category import Category
+from src.experiment import Experiment
 
-
-class Reader:
+class ExperimentXMLreader(Reader):
     """
-    A class to help read the experiment data.
+        This class is supposed to read the xml PROPHET files using the old structure.
     """
-
-    def __init__(self, filename):
-        self.answer_file = filename
-        with open(filename, 'r') as thexml:
-            self.tree = ET.parse(thexml)
-        self.root = self.tree.getroot()
-        self.experiment = Experiment("", "", {})
-
-    def getExperiment(self):
-        return self.experiment
-
-    def setAnswerFile(self, filename):
-        self.answer_file = filename
-
-    def get_subject_group(self):
-        if self.answer_file.__contains__("/FH/"):
-            return "FH"
-        elif self.answer_file.__contains__("/IFDEF/"):
-            return "IFDEF"
 
     def get_response_time_of_the_category(self, idx):
         """
@@ -107,8 +85,12 @@ class Reader:
         return tasks_answers
 
     def process(self):
+        """
+            Extracts the information from the file and returns an 'Experiment' object.
+            :return:
+        """
         subject_code = self.get_subject_code()
-        subject_group = self.get_subject_group()
+        subject_group = self.get_sgroup()
 
         categories = {}
         for i in range(1, 6):
@@ -127,6 +109,7 @@ class Reader:
         self.experiment = Experiment(subject_code, subject_group, categories)
         return self.experiment
 
+
     def walk(self):
         print "=========="
         print "Subject: " + self.experiment.getSubjectCode()
@@ -138,4 +121,3 @@ class Reader:
             print "\n[" + category.getName() + "] lasted " + category.getResponseTime() + " ms:"
             for answer in category.getAnswers().items():
                 print "::> " + answer[0] + ": " + answer[1]
-
