@@ -1,7 +1,7 @@
 from src.readers.reader import Reader
 
 
-class QTreeXMLreader(Reader):
+class QTreeXMLReader(Reader):
     """
         This class is supposed to read the .xml PROPHET files using the 'QTreeNode' structure.
     """

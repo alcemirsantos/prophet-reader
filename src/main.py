@@ -1,6 +1,6 @@
 import os
-from src.readers.experimentxmlreader import ExperimentXMLreader
-from src.readers.qtreexmlreader import QTreeXMLreader
+from src.readers.experimentxmlreader import ExperimentXMLReader
+from src.readers.qtreexmlreader import QTreeXMLReader
 from src.writer import Writer
 
 ANSWERS_DIR = "/Users/alcemirsantos/Dropbox/PhD/activities/experiments/16-FOSD12 Replication/Experiment/Answers"
@@ -24,7 +24,7 @@ def get_list_of_answers_files():
 def process_experiment_xmlfile():
     for filename in get_list_of_answers_files():
         print "\n<> Processing: " + filename
-        reader = ExperimentXMLreader(filename)
+        reader = ExperimentXMLReader(filename)
         data.append(reader.process())
         # reader.walk()
 
@@ -36,7 +36,7 @@ def process_experiment_xmlfile():
 def process_qtree_xmlfile():
     for filename in get_list_of_answers_files():
         print "\n<> Processing: "+filename
-        reader = QTreeXMLreader(filename)
+        reader = QTreeXMLReader(filename)
         data.append(reader.process())
         reader.walk()
 

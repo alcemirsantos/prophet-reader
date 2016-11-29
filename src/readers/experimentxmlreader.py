@@ -3,7 +3,7 @@ from src.beans.experiment import Experiment
 from src.readers.reader import Reader
 
 
-class ExperimentXMLreader(Reader):
+class ExperimentXMLReader(Reader):
     """
         This class is supposed to read the xml PROPHET files using the old structure.
     """
