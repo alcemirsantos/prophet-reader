@@ -1,6 +1,5 @@
 from src.readers.reader import Reader
-from src.category import Category
-from src.experiment import Experiment
+
 
 class QTreeXMLreader(Reader):
     """
@@ -19,3 +18,4 @@ class QTreeXMLreader(Reader):
         """
          TODO implement method to walk through the xml file
         """
+

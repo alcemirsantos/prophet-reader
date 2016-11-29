@@ -1,6 +1,7 @@
+from src.beans.category import Category
+from src.beans.experiment import Experiment
 from src.readers.reader import Reader
-from src.category import Category
-from src.experiment import Experiment
+
 
 class ExperimentXMLreader(Reader):
     """

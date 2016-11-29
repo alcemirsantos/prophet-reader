@@ -1,5 +1,7 @@
 import xml.etree.ElementTree as ET
-from src.experiment import Experiment
+
+from src.beans.experiment import Experiment
+
 
 class Reader:
     """
