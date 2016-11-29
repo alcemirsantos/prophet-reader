@@ -9,7 +9,7 @@ class ExperimentXMLReader(Reader):
     """
 
     def __init__(self, filename):
-        super(Reader, filename)
+        Reader.__init__(self, filename)
 
     def get_response_time_of_the_category(self, idx):
         """

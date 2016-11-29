@@ -7,7 +7,7 @@ class QTreeXMLReader(Reader):
     """
 
     def __init__(self, filename):
-        super(Reader, filename)
+        Reader.__init__(self, filename)
 
     def process(self):
         for task_answers in self.root.findall(".//answers"):
