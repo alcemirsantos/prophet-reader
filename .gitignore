@@ -1,0 +1,16 @@
+# ignore MacOS files
+*.DS_Store
+
+# ignore generated files
+bin/
+*.class
+ 
+# ignore temporary files
+.tmp/
+
+# ignore virtualenv generated files
+/lib
+/include
+/bin
+.Python
+pip-selfcheck.json
