@@ -6,7 +6,7 @@ class Writer:
     Writes the summary of the experiments
     """
 
-    def get_row(self, experiment):
+    def make_row_from(self, experiment):
         row = (experiment.getGroup(), experiment.getSubjectCode())
 
         category_items = experiment.getCategories().items()
@@ -53,7 +53,7 @@ class Writer:
         print csvfile.name + " written!"
 
 
-    def persistall(self, experiments = []):
+    def persist_summary(self, experiments = []):
         """
         Persists the csv file
         :return:
@@ -73,7 +73,7 @@ class Writer:
 
             writer.writerow(header)
             for exp in experiments:
-                writer.writerow(self.get_row(exp))
+                writer.writerow(self.make_row_from(exp))
 
         print csvfile.name + " written!"
 
@@ -88,5 +88,5 @@ class Writer:
 
             writer.writerow(header)
             for exp in experiments:
-                writer.writerow(self.get_row(exp))
+                writer.writerow(self.make_row_from(exp))
         print  csvfile.name + " written!"
