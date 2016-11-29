@@ -8,6 +8,9 @@ class ExperimentXMLReader(Reader):
         This class is supposed to read the xml PROPHET files using the old structure.
     """
 
+    def __init__(self, filename):
+        super(Reader, filename)
+
     def get_response_time_of_the_category(self, idx):
         """
         Returns the response time of each task 'idx'.
