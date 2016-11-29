@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<QTreeNode type="EXPERIMENT" name="Experimento" answerTime="7243">
+  <QTreeNode type="CATEGORY" name="Tarefa1" answerTime="1138">
+    <answers>
+      <entry>
+        <string>Answers1Class</string>
+        <string-array>
+          <string>MediaData</string>
+        </string-array>
+      </entry>
+      <entry>
+        <string>Answers1Solution</string>
+        <string-array>
+          <string>Talvez mudar a linha 158 para: return this.numberOfViews;</string>
+        </string-array>
+      </entry>
+      <entry>
+        <string>Answers1LineNumber</string>
+        <string-array>
+          <string>158</string>
+        </string-array>
+      </entry>
+      <entry>
+        <string>Answers1Problem</string>
+        <string-array>
+          <string>Talvez porque no getNumberOfViews(), nÃ£o estÃ¡ retornando a variavÃ©l incrementada.</string>
+        </string-array>
+      </entry>
+    </answers>
+  </QTreeNode>
+  <QTreeNode type="CATEGORY" name="Tarefa2" answerTime="2673">
+    <answers>
+      <entry>
+        <string>Answers2LineNumber</string>
+        <string-array>
+          <string>124</string>
+        </string-array>
+      </entry>
+      <entry>
+        <string>Answers2Class</string>
+        <string-array>
+          <string>PlayVideoScreen</string>
+        </string-array>
+      </entry>
+      <entry>
+        <string>Answers2Problem</string>
+        <string-array>
+          <string>Acredito que o Display esteja vindo null por algum motivo.</string>
+        </string-array>
+      </entry>
+      <entry>
+        <string>Answers2Solution</string>
+        <string-array>
+          <string>Verificar a variÃ¡vel midlet pra saber se estÃ¡ dentro do escopo de &quot;includeVideo&quot;, ou se estÃ¡ vindo nula.</string>
+        </string-array>
+      </entry>
+    </answers>
+  </QTreeNode>
+  <QTreeNode type="CATEGORY" name="Tarefa3" answerTime="1184">
+    <answers>
+      <entry>
+        <string>Answers3Problem</string>
+        <string-array>
+          <string>Pode ser por 2 motivos.
+N linha 300, o segundo parametro deveria ser &quot;true&quot;;
+ou na linha 141 da classe MediaListController, o &quot;#endif&quot; estÃ¡ posicionado errado. 
+Ele deveria vir na linha 143</string>
+        </string-array>
+      </entry>
+      <entry>
+        <string>Answers3Solution</string>
+        <string-array>
+          <string>Eu respondi isso na questÃ£o anterior. Ou trocar o segunda parametro da linha 300 para &quot;true&quot;
+ficando &quot;showMediaList(getCurrentStoreName(), false, true)&quot;
+Ou entÃ£o removando o endif da linha 141 da classe MediaListController e colocando na linha 143.</string>
+        </string-array>
+      </entry>
+      <entry>
+        <string>Answers3LineNumber</string>
+        <string-array>
+          <string>300</string>
+        </string-array>
+      </entry>
+      <entry>
+        <string>Answers3Class</string>
+        <string-array>
+          <string>MediaController</string>
+        </string-array>
+      </entry>
+    </answers>
+  </QTreeNode>
+  <QTreeNode type="CATEGORY" name="Tarefa4" answerTime="608">
+    <answers>
+      <entry>
+        <string>Answers4Problem</string>
+        <string-array>
+          <string>O mÃ©todo de ordenaÃ§Ã£o nÃ£o estÃ¡ implementado</string>
+        </string-array>
+      </entry>
+      <entry>
+        <string>Answers4Class</string>
+        <string-array>
+          <string>MediaListControllerq</string>
+        </string-array>
+      </entry>
+      <entry>
+        <string>Answers4LineNumber</string>
+        <string-array>
+          <string>169</string>
+        </string-array>
+      </entry>
+      <entry>
+        <string>Answers4Solution</string>
+        <string-array>
+          <string>Implementar o bubbleSort, ou qualquer outro mÃ©todo de ordenaÃ§Ã£o.</string>
+        </string-array>
+      </entry>
+    </answers>
+  </QTreeNode>
+  <QTreeNode type="CATEGORY" name="Tarefa5" answerTime="1075">
+    <answers>
+      <entry>
+        <string>Answers5Solution</string>
+        <string-array>
+          <string>Restringir o scopo do else if d linha 212 para alguma feature especÃ­fica, ou verificar se o if da linha 90 estÃ¡ entrando de fato.</string>
+        </string-array>
+      </entry>
+      <entry>
+        <string>Answers5Class</string>
+        <string-array>
+          <string>MediaController</string>
+        </string-array>
+      </entry>
+      <entry>
+        <string>Answers5LineNumber</string>
+        <string-array>
+          <string>212</string>
+        </string-array>
+      </entry>
+      <entry>
+        <string>Answers5Problem</string>
+        <string-array>
+          <string>Pode ser por 2 motivos:
+O elseif referente a deletar nÃ£o estÃ¡ sob o escopo de nenhuma feature:
+&quot;else if (label.equals(&quot;Delete&quot;)) {&quot;
+
+ou
+na linha 90, o if nÃ£o estÃ¡ entrando.</string>
+        </string-array>
+      </entry>
+    </answers>
+  </QTreeNode>
+  <QTreeNode type="CATEGORY" name="Fim" answerTime="11">
+    <answers/>
+  </QTreeNode>
+  <QTreeNode type="CATEGORY" name="Feedback" answerTime="24">
+    <QTreeNode type="QUESTION" name="Dificuldade" answerTime="82">
+      <answers>
+        <entry>
+          <string>AnswersDiffculty1</string>
+          <string-array>
+            <string>2</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersDiffculty2</string>
+          <string-array>
+            <string>1</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersDiffculty3</string>
+          <string-array>
+            <string>2</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersDiffculty4</string>
+          <string-array>
+            <string>3</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersDiffculty5</string>
+          <string-array>
+            <string>2</string>
+          </string-array>
+        </entry>
+      </answers>
+    </QTreeNode>
+    <QTreeNode type="QUESTION" name="Motivação" answerTime="38">
+      <answers>
+        <entry>
+          <string>AnswersMotivation3</string>
+          <string-array>
+            <string>3</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersMotivation4</string>
+          <string-array>
+            <string>3</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersMotivation5</string>
+          <string-array>
+            <string>2</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersMotivation1</string>
+          <string-array>
+            <string>3</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersMotivation2</string>
+          <string-array>
+            <string>2</string>
+          </string-array>
+        </entry>
+      </answers>
+    </QTreeNode>
+    <QTreeNode type="QUESTION" name="Fatores de impacto" answerTime="198">
+      <answers>
+        <entry>
+          <string>AnswersConfounding13</string>
+          <string-array>
+            <string>2</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersConfounding12</string>
+          <string-array>
+            <string>3</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersConfounding11</string>
+          <string-array>
+            <string>2</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersConfounding10</string>
+          <string-array>
+            <string>1</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersConfounding9</string>
+          <string-array>
+            <string>1</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersConfounding6</string>
+          <string-array>
+            <string>2</string>
+            <string>Eu nÃ£o sabia de fato o que eu tava procurando, se era erro de programaÃ§Ã£o dentro do escopo de algum ifdef ou se era falta de algum ifdef ou colocaÃ§Ã£o errada do mesmo.</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersConfounding5</string>
+          <string-array>
+            <string>2</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersConfounding8</string>
+          <string-array>
+            <string>2</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersConfounding7</string>
+          <string-array>
+            <string>2</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersConfounding2</string>
+          <string-array>
+            <string>2</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersConfounding1</string>
+          <string-array>
+            <string>3</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersConfounding4</string>
+          <string-array>
+            <string>2</string>
+          </string-array>
+        </entry>
+        <entry>
+          <string>AnswersConfounding3</string>
+          <string-array>
+            <string>2</string>
+          </string-array>
+        </entry>
+      </answers>
+    </QTreeNode>
+    <answers/>
+  </QTreeNode>
+  <QTreeNode type="CATEGORY" name="Ademais" answerTime="182">
+    <answers>
+      <entry>
+        <string>AnswersFurther</string>
+        <string-array>
+          <string>Talvez se fose na prÃ³pria IDE (eclipse por exemplo) tornaria o trabalho mais fÃ¡cil. 
+A IDE tem mais opÃ§Ãµes, como encontrar escopo de chaves, selecionar variaveis e mÃ©todos (ao clicar em 1 todos ficam selecionados), essas coisas.
+Outra coisa, na hora do feedback, eu nÃ£o sei se respondo corretamente, pois nÃ£o Ã© permitido voltar Ã s tarefas para relembrar. Por exemplo, eu nÃ£o lembro mais se a tarefa que achei mais dificil foi a 3 ou a 4.</string>
+        </string-array>
+      </entry>
+    </answers>
+  </QTreeNode>
+  <answers>
+    <entry>
+      <string>experimentcode</string>
+      <string-array/>
+    </entry>
+    <entry>
+      <string>subjectcode</string>
+      <string-array>
+        <string>PDUSAA</string>
+      </string-array>
+    </entry>
+  </answers>
+</QTreeNode>
