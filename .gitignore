@@ -3,7 +3,7 @@
 
 # ignore generated files
 bin/
-*.class
+*.pyc
  
 # ignore temporary files
 .tmp/
@@ -14,3 +14,6 @@ bin/
 /bin
 .Python
 pip-selfcheck.json
+
+#ignore PyCharm IDE files
+/.idea
