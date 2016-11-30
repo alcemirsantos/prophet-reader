@@ -70,7 +70,7 @@ class QTreeXMLReader(Reader):
         summary.update(self.extract_answers())
         summary.update(self.get_tasks_times())
 
-        experiment = Experiment(summary['subjectcode'] ,self.get_sgroup(), summary)
+        experiment = Experiment(summary['subjectcode'] ,self.get_sgroup(), summary, self.get_round())
         return experiment
 
 

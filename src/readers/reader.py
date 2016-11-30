@@ -20,3 +20,13 @@ class Reader:
             return "FH"
         elif self.answer_file.__contains__("/IFDEF/"):
             return "IFDEF"
+        else:
+            return "[]"
+
+    def get_round(self):
+        if self.answer_file.__contains__("/Round-MM/"):
+            return "MM"
+        elif self.answer_file.__contains__("/Round-RE/"):
+            return "RE"
+        else:
+            return "[]"
