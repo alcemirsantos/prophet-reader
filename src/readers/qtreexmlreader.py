@@ -33,7 +33,6 @@ class QTreeXMLReader(Reader):
         Extracts all the answers data
         :return:
         """
-
         tasks_answers_entries = self.root.findall(".//answers[entry]")
 
         answers = {}
@@ -41,23 +40,18 @@ class QTreeXMLReader(Reader):
             answers.update(self.extract_entry_pairs(task_answers))
         return answers
 
-    def get_answer_time_of(self, name):
-        """
-        Returns the time spent to finish a given node
-        :return:
-        """
-        tag = self.root.findall(".//QTreeNode[@name='%s']" % name)
-        return tag[0].get('answerTime')
 
     def get_tasks_times(self):
         """
-        Returns
+        Returns the time spent in each task.
         :return:
         """
         ttimes = {}
         for i in range(1,6):
             idx = "Tarefa%u" % i
-            ttimes[idx] = self.get_answer_time_of(idx)
+            tag = self.root.findall(".//QTreeNode[@name='%s']" % idx)
+            time = tag[0].get('answerTime')
+            ttimes[idx] = time
         return ttimes
 
 
