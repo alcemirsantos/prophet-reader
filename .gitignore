@@ -17,3 +17,4 @@ pip-selfcheck.json
 
 #ignore PyCharm IDE files
 /.idea
+*.csv
