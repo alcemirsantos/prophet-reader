@@ -41,14 +41,14 @@ def process_experiment_xmlfile():
     writer = Writer()
     writer.persist_summary(data)
 
-
-
 def process_qtree_xmlfile():
     for filename in get_list_of_answers_files():
         print "\n<> Processing: "+filename
         reader = QTreeXMLReader(filename)
         data.append(reader.process())
-        reader.walk()
 
-    #writer = Writer()
-    #writer.persistall(data)
+    writer = Writer()
+    writer.persist_summary(data)
+
+
+process_qtree_xmlfile()
