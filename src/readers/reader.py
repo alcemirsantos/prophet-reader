@@ -15,15 +15,8 @@ class Reader:
         self.root = self.tree.getroot()
         self.experiment = Experiment("", "", {})
 
-    def getExperiment(self):
-        return self.experiment
-
-    def setAnswerFile(self, filename):
-        self.answer_file = filename
-
     def get_sgroup(self):
         if self.answer_file.__contains__("/FH/"):
             return "FH"
         elif self.answer_file.__contains__("/IFDEF/"):
             return "IFDEF"
-
