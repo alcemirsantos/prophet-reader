@@ -5,7 +5,7 @@ from src.writer import Writer
 
 
 RESOURCES_DIR = "/Users/alcemirsantos/Documents/Workspace/prophet-reader/resources"
-ANSWERS_DIR = "/Users/alcemirsantos/Dropbox/PhD/activities/experiments/16-FOSD12 Replication/Experiment/Answers"
+ANSWERS_DIR = "/Users/alcemirsantos/Dropbox/PhD/activities/experiments/16-FOSD12 Replication/VICC2 - RiSE/Answers"
 
 ANSWER_FILENAME = "answers.xml"
 TEST_XMLFILES = ["FH.xml", "IFDEF.xml"]
@@ -23,8 +23,7 @@ def get_list_of_answers_files():
                 print "<> Disregarding: "+filepath
     return filenames
 
-
-def get_list_of_textfiles():
+def get_list_of_testfiles():
     tfiles = []
     for f in TEST_XMLFILES:
         fname = os.path.join(RESOURCES_DIR, f)
