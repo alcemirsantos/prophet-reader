@@ -55,7 +55,7 @@ class Writer:
         :return:
         """
         rows = []
-        for i in range(1,15):
+        for i in range(1,14):
             question = "AnswersConfounding%u"%i
             row = (experiment.round,
                    experiment.group,
@@ -64,13 +64,7 @@ class Writer:
                    experiment.categories.get(question, "<< empty >>"))
 
             rows.append(row)
-        further = "AnswersFurther"
-        row = (experiment.round,
-               experiment.group,
-               experiment.subject_code,
-               further,
-               experiment.categories[further])
-        rows.append(row)
+
         return rows
 
     def make_answers_rows(self, experiment):
