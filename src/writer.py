@@ -18,7 +18,7 @@ class Writer:
                                   "Motivation-Q1", "Motivation-Q2", "Motivation-Q3", "Motivation-Q4", "Motivation-Q5")
 
         # used to the xml with QTreeNode tag based format
-        self.qtree_answersheader = ("Round", "Group", "Code", "Time", "Class", "Line", "Folder", "Problem",
+        self.qtree_answersheader = ("Round", "Group", "Code", "Task", "Time", "Class", "Line", "Folder", "Problem",
                   "Solution", "Difficulty", "Motivation")
 
         self.qtree_feedbackheader = ("Round", "Group", "Code", "Question", "Answer")
@@ -79,6 +79,7 @@ class Writer:
             row = (experiment.round,
                    experiment.group,
                    experiment.subject_code,
+                   "T%u" % i,
                    experiment.categories['Tarefa%u'%i],
                    experiment.categories[prefix+"Class"],
                    experiment.categories[prefix+"LineNumber"],
